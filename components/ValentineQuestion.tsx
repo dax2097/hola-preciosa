@@ -3,7 +3,6 @@ import { useState, useEffect } from "react"
 import { useSpring, animated } from "@react-spring/web"
 import Image from "next/image"
 import { useRouter } from "next/navigation"
-import Senor from "@/public/img/senor.jpg"
 
 export default function ValentineQuestion() {
   const [noCount, setNoCount] = useState(0)
