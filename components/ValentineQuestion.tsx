@@ -3,6 +3,18 @@ import { useState, useEffect } from "react"
 import { useSpring, animated } from "@react-spring/web"
 import Image from "next/image"
 import { useRouter } from "next/navigation"
+import Gato1 from "@/public/img/Gato1.jpg"
+import Gato2 from "@/public/img/Gato2.jpg"
+import Gato3 from "@/public/img/Gato3.jpg"
+import Gato4 from "@/public/img/Gato4.jpg"
+import Gato5 from "@/public/img/Gato5.jpg"
+import Gato6 from "@/public/img/Gato6.jpg"
+import Gato7 from "@/public/img/Gato7.jpg"
+import Gato8 from "@/public/img/Gato8.jpg"
+import Gato9 from "@/public/img/Gato9.jpg"
+import Gato10 from "@/public/img/Gato10.jpg"
+import Gato11 from "@/public/img/Gato11.jpg"
+import Senor from "@/public/img/senor.jpg"
 
 export default function ValentineQuestion() {
   const [noCount, setNoCount] = useState(0)
@@ -10,17 +22,17 @@ export default function ValentineQuestion() {
   const router = useRouter()
 
   const sadCatImages = [
-    "/img/Gato1.jpg",
-    "/img/Gato2.jpg",
-    "/img/Gato3.jpg",
-    "/img/Gato4.jpg",
-    "/img/Gato5.jpg",
-    "/img/Gato6.jpg",
-    "/img/Gato7.jpg",
-    "/img/Gato8.jpg",
-    "/img/Gato9.jpg",
-    "/img/Gato10.jpg",
-    "/img/Gato11.jpg",
+    Gato1,
+    Gato2, 
+    Gato3,
+    Gato4,
+    Gato5, 
+    Gato6,
+    Gato7,
+    Gato8, 
+    Gato9,
+    Gato10,
+    Gato11
   ]
 
   useEffect(() => {
@@ -62,7 +74,7 @@ export default function ValentineQuestion() {
       {/* Imagen superior antes de la pregunta */}
       <Image
       hidden={noCount > 0}
-        src="/img/senor.jpg" // Cambia esta ruta a la imagen deseada
+        src={Senor} // Cambia esta ruta a la imagen deseada
         alt="Love Banner"
         width={400}
         height={200}
