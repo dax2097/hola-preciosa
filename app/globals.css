@@ -2,26 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-100px) rotate(180deg);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-200px) rotate(360deg);
+    opacity: 0;
+  }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-float {
+  animation: float 10s infinite linear;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 255, 228, 230;
+  --background-end-rgb: 255, 182, 193;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(var(--foreground-rgb));
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
