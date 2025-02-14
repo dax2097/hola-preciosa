@@ -6,8 +6,8 @@ import type React from "react" // Import React
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Valentine's Day Animation",
-  description: "A sweet Valentine's Day animation",
+  title: "Hola mi muñeca preciosa",
+  description: "Espero que te guste",
 }
 
 export default function RootLayout({
