@@ -49,11 +49,23 @@ export default function Success() {
             ))}
         </div>
         <div className="bg-white p-8 rounded-lg shadow-lg">
-          <h2 className="text-3xl font-bold text-red-600 mb-4">Tenemos una cita!</h2>
-          <p className="text-xl text-gray-700">
-            Ponte preciosa como siempre, prepara unos besos 
+          <h2 className="text-3xl font-bold text-red-600 mb-4">Muñeca</h2>
+          {/* <p className="text-xl text-gray-700">
+          Desde el primer momento en que te vi, supe que había algo especial en ti. Hoy, más que nunca, quiero que este San Valentín sea a tu lado, 
             <br />
-            coquetos y te veo para ser felices
+            porque no hay nadie más con quien prefiera compartir esta vida que no sea contigo 💖
+          </p> */}
+          <p className="text-base lg:text-3xl text-gray-700">
+            Hay algo en tu mirada que enciende cada fibra de mi ser…<br />
+            una chispa que me invita a descubrir cada secreto de tu piel,<br />
+            perderme en el calor de tu aliento, en la urgencia de tu querer,<br />
+            y escribir con mis labios en tu cuerpo lo mucho que te quiero tener.<br />
+            <br />
+            Quiero perderme en tus brazos, sin prisa, sin final,<br />
+            ser la sombra que te sigue, en un abrazo inmortal.<br />
+            Que el tiempo se detenga cuando tú me mires así,<br />
+            y que el universo se disuelva, sólo tú y yo, aquí.<br />
+
           </p>
         </div>
       </animated.div>

@@ -11,15 +11,17 @@ export default function PoemPage() {
   // Diccionario con los identificadores y los nombres
   const nameSlug = {
     "1938-AH-1": "Ma Chérie ❤️",
+    "8858-AM-1": "Aylin❤️ La conta mas preciosa ❤️",
+    "8183-GC-1": "Nicole"
     // Agregar más identificadores y nombres si es necesario
   }
 
   const poem = [
-    "Hoy en San Valentín te quiero decir",
-    "Que contigo siempre quiero estar aquí",
-    "Tu amor me hace soñar sin fin",
-    "Y mi vida contigo tiene mucho por vivir"
-  ]
+    "Desde el primer instante en que te vi, supe que eras para mí",
+    "Hoy, más que nunca, quiero que este San Valentín sea solo para ti",
+    "Tu amor ilumina mis días, dándome calma y alegría",
+    "Y en este día quiero preguntarte ..."
+  ];
 
   const fadeIn = useSpring({
     opacity: 1,

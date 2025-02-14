@@ -3,17 +3,6 @@ import { useState, useEffect } from "react"
 import { useSpring, animated } from "@react-spring/web"
 import Image from "next/image"
 import { useRouter } from "next/navigation"
-import Gato1 from "@/public/img/Gato1.jpg"
-import Gato2 from "@/public/img/Gato2.jpg"
-import Gato3 from "@/public/img/Gato3.jpg"
-import Gato4 from "@/public/img/Gato4.jpg"
-import Gato5 from "@/public/img/Gato5.jpg"
-import Gato6 from "@/public/img/Gato6.jpg"
-import Gato7 from "@/public/img/Gato7.jpg"
-import Gato8 from "@/public/img/Gato8.jpg"
-import Gato9 from "@/public/img/Gato9.jpg"
-import Gato10 from "@/public/img/Gato10.jpg"
-import Gato11 from "@/public/img/Gato11.jpg"
 import Senor from "@/public/img/senor.jpg"
 
 export default function ValentineQuestion() {
@@ -22,17 +11,17 @@ export default function ValentineQuestion() {
   const router = useRouter()
 
   const sadCatImages = [
-    Gato1,
-    Gato2, 
-    Gato3,
-    Gato4,
-    Gato5, 
-    Gato6,
-    Gato7,
-    Gato8, 
-    Gato9,
-    Gato10,
-    Gato11
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFaVRswdLPCBrEq50f6a0pWA9IKI2arq5ynw&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyuEhUKga54cJfc9Nr25Z5B6mmK0vsW60NsQ&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGR7uk9vIYTelAfQxC6RaQq_FRePoW5ISzjg&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOjcVDes0h4pdADtiyHMvJ68usdPqfX9NmcQ&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0QLBk7y1OwBrEx21EZ_cnio-ArfYAATbQBg&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvjAh5Pdt-pBosz6twf1oC_EyTZfPEJTRVGwaWvqiqEhJdGa-MFsq70yLlEtmbG9MaWks&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn1yDmmKGUlr3Xh6yuPe1gq6Y7PkBQ_VyJjQ&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIAsNn7c7bCLRZKl7VywmepvR176xH8xeQGQ&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCOebxQ2JWhJgfiu_myFHjerSgejGOhrXP4g&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSROwOunnsDc2c-EFtIHpAvFFs40_Fu0Ach2A&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgwcmsnuQJ08KxnFQE8H7iCJat30QLrWXR-A&s",
   ]
 
   useEffect(() => {
@@ -74,7 +63,7 @@ export default function ValentineQuestion() {
       {/* Imagen superior antes de la pregunta */}
       <Image
       hidden={noCount > 0}
-        src={Senor} // Cambia esta ruta a la imagen deseada
+        src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRg2V2yJUBjmrcZFQaXeUINZ1HPKJmOiT5Gg&s"} // Cambia esta ruta a la imagen deseada
         alt="Love Banner"
         width={400}
         height={200}
